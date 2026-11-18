@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Markdown to HTML Converter</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Markdown to HTML Converter</h1>
+        </header>
+
+        <main>
+            <div id="container" style="display: flex; width: 100%">
+                <section
+                    id="input-section"
+                    style="flex: 1; padding-right: 10px"
+                >
+                    <h2>Enter Markdown:</h2>
+                    <textarea
+                        id="markdown-input"
+                        placeholder="Enter your Markdown here..."
+                        style="width: 100%"
+                    ></textarea>
+                    <textarea
+                        id="title-input"
+                        placeholder="Enter your new title here..."
+                        style="width: 50%; height: 10%"
+                    ></textarea>
+                    <button id="update-title">Update Title</button>
+                </section>
+                <section
+                    id="output-section"
+                    style="flex: 1; padding-left: 10px"
+                >
+                    <h2>HTML Output:</h2>
+                    <div id="html-output"></div>
+                    <label
+                        ><input type="checkbox" name="checkbox" checked />Render
+                        HTML</label
+                    >
+                    <button id="save-html">Save HTML</button>
+                    <div id="save-message"></div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Parsing and Seething and Seething and Parsing</p>
+        </footer>
+        <script src="./src/main.ts" type="module"></script>
+    </body>
+</html>
